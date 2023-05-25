@@ -1,5 +1,5 @@
 .386                                    ;32bit
-.model flat,stdcall
+.model flat, stdcall
 .stack 4096
 
 ExitProcess PROTO, dwExitCode:DWORD     ;function prototype:
