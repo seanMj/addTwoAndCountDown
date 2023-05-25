@@ -13,7 +13,7 @@ main PROC
     imul eax, eax, 6                    ; multiply the value of eax, with the value of 6 to equal 66    | eax <- (11 * 6) = 66
     mov ecx, eax
 Loop_1:                                 ; where to start my loop
-    sub ecx, 1                          ; subtract 1 from each iteration through the loop from ecx
+    sub ecx, 1                          ; subtract 1 from each iteration through the loop from ecx | equilivant to using ++ecx, if i swapped cmp with sub, it would be ecx++
     cmp ecx, 0                          ; compare ecx against zero (0) during countdown from n
     jnz Loop_1                          ; if the value of ecx is not zero, continue the countdown from n
     
