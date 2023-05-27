@@ -18,7 +18,7 @@ Loop_1:                                 ; where to start my loop
     jnz Loop_1                          ; if the value of ecx is not zero, continue the countdown from n
     
 
-    INVOKE ExitProcess, 0               ; exit program using WIN API
-
+    INVOKE ExitProcess, eax               ; exit program using WIN API
+                                          ; just using eax as a hacky way to display the value within eax without having to produce a function to print, MSVS does it for me
 main ENDP
 END main
